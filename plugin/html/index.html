@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <script src="../js/lib/jquery/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+  </head>
+  <body>
+    <h1>XPathで遊んでみるツール</h1>
+    <h2>XPathを取得する</h2>
+    <button id="xpath_mode_button">XPath Mode</button><br>
+    <span id="xpath"></span>
+    <h2>Selectかえーる</h2>
+    <ol>
+      <li>
+         XPath Modeボタンを押下
+      </li>
+      <li>
+         セレクトボックスを押下
+      </li>
+      <li>
+        ValueもしくはHTMLを変更する
+      </li>
+      <li>
+        チェンジボタンを押下する
+      </li>
+      <li>
+        変更される
+      </li>
+    </ol>
+    value:<input type="text" id="element_value"><button id="change_element_value_button">チェンジ</button><br>
+    html:<input type="text" id="element_html"><button id="change_element_html_button">チェンジ</button>
+    <h2>Option一覧</h2>
+    <button id="update_button">更新</button><br>
+    <textarea id="option_list"></textarea>
+  </body>
+</html>

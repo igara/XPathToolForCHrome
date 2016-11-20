@@ -1,0 +1,23 @@
+{
+  "name": "XPathToolForChrome",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "XPathと遊ぶツール",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["js/lib/jquery/jquery.min.js", "js/content_script.js"]
+  }],
+  "browser_action": {
+    "default_popup": "html/index.html"
+  },
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  }
+}
